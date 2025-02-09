@@ -1,0 +1,11 @@
+# settings.toml
+[default]
+DEBUG = false
+DATABASE_URL = "sqlite:///default.db"
+
+[development]
+DEBUG = true
+DATABASE_URL = "sqlite:///dev.db"
+
+[production]
+DATABASE_URL = "postgresql://user:pass@localhost:5432/prod"

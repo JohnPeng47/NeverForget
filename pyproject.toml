@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "spaced-rep"
+version = "0.1.0"
+description = ""
+authors = ["JohnPeng47 <johnpeng47@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.8"
+sqlmodel = "^0.0.22"
+alembic = "^1.14.1"
+johnllm = {path = "../johnllm", develop = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
